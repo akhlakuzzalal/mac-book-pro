@@ -14,3 +14,6 @@
 hr{
    border: 2px solid rgb(7, 6, 6);
 }
+#display-discount{
+   display: none;
+}

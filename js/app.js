@@ -4,7 +4,9 @@ const storageCost = document.getElementById('storage-cost');
 const delivaryCost = document.getElementById('delivary-cost');
 const previousTotalCost = document.getElementById('total-price');
 const total = document.getElementById('total');
-const promoCode = document.getElementById('promo-code')
+const promoCode = document.getElementById('promo-code');
+const displayDiscount = document.getElementById('display-discount');
+const discountAmount = document.getElementById('discount-amount')
 
 // common function
 function updateTotallPrice() {
@@ -62,6 +64,12 @@ document.getElementById('apply-btn').addEventListener('click', function () {
    const discount = parseFloat(totalValue) * .2;
    if (promoCode.value === 'stevekaku') {
       total.innerText = parseFloat(totalValue) - discount;
+      discountAmount.innerText = discount;
+      displayDiscount.style.display = 'block';
+   }
+   else {
+      displayDiscount.style.display = 'none';
+      updateTotall();
    }
    promoCode.value = '';
 })
