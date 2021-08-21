@@ -1,0 +1,16 @@
+/* custom style for buttons */
+.btn-optimize{
+   border: 1px solid black;
+}
+.btn-optimize:hover{
+   background-color: rgba(0, 0, 0, 0.904);
+   color: white;
+}
+.btn-apply{
+   background-color: red;
+   color: whitesmoke;
+}
+/* hr tag style */
+hr{
+   border: 2px solid rgb(7, 6, 6);
+}

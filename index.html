@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mac book Pro</title>
+   <!-- Bootstrap Style Sheet -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+   <!-- Core CSS Style Sheet -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <!-- start main part -->
+   <main>
+      <section class="container  mt-5">
+         <div class="row g-5">
+            <div class="col-sm-12 col-md-6">
+               <img class="img-fluid mb-5 pb-5" src="images/mac.png" alt="">
+            </div>
+            <div class="col-md-6 col-sm-12">
+               <h1>Customize Your Blue 24-Inch iMac with Apple M1 chip</h1>
+               <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and
+                  16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Gigabit
+                  Ethernet Magic Trackpad Magic Keyboard - US English</p>
+               <!-- Memory Part -->
+               <h3 class="mt-5">Memory</h3>
+               <button id="8-GB-btn" class="btn btn-optimize">8GB unified Memory</button>
+               <button id="16-GB-btn" class="btn btn-optimize">16 GB unified Memory</button>
+               <!-- Storage part -->
+               <h3 class="mt-5">storage</h3>
+               <button id="256-GB-btn" class="btn btn-optimize">256 GB SSD storage</button>
+               <button id="512-GB-btn" class="btn btn-optimize">512 GB SSD storage</button>
+               <button id="1TB-btn" class="btn btn-optimize">1 TB SSD storage</button>
+               <!-- Delivary par -->
+               <h3 class="mt-5">Chose your delivary option</h3>
+               <button id="free-delivary-btn" class="btn btn-optimize">Friday, Aug 25 free Prime delivary</button>
+               <button id="costly-delivary-btn" class="btn btn-optimize">Friday, Aug 21, delivary charge $20</button>
+               <!-- Counting Totall Part -->
+               <div class="mt-5 pt-5 fw-bold">
+                  <div class="d-flex justify-content-between">
+                     <p>Best Price</p>
+                     <p>$1299</p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                     <p>Extra memory cost</p>
+                     <p>$<span id="memory-cost">0</span></p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                     <p>Extra storage cost</p>
+                     <p>$<span id="storage-cost">0</span></p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                     <p>Delivary cost</p>
+                     <p>$<span id="delivary-cost">0</span></p>
+                  </div>
+                  <hr>
+                  <!-- Totall price Without discount -->
+                  <div class="d-flex justify-content-between fw-bold">
+                     <p>Totall Price</p>
+                     <p>$<span id="total-price">1299</span></p>
+                  </div>
+                  <br>
+                  <!-- Promo code Add -->
+                  <p>Add promo code</p>
+                  <div class="d-flex align-items-center">
+                     <input id="promo-code" class="form-control" type="text" placeholder="Insert a cuppon here">
+                     <button id="apply-btn" class="btn btn-apply">Apply</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <!-- after use promo code , discounted price -->
+         <h1 class="text-center mb-5 pb-5">Totall: $<span id="total">1299</span></h1>
+      </section>
+   </main>
+
+
+
+   <!-- Javascript sheet -->
+   <script src="js/app.js"></script>
+   <!-- Bootstrap Java-Script Sheet -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
